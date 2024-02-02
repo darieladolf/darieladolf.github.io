@@ -1,0 +1,122 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#titu{
+    color: white;
+    text-shadow: 1px 2px 2px black,0 0 25px blue,0 0 5px blue;
+    text-align: center;
+    font-size: 70px;
+}
+.wrap{
+    width: 885px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+ul.tabs{
+    width: 100%;
+    background-color: #363636;
+    display: flex;
+}
+ul.tabs li{
+    width: 18%;
+}
+ul.tabs li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    padding: 10px 0px;
+}
+.active{
+    background: #0984CC;
+}
+.tab_text{
+    margin-left: 5px;
+}
+.secciones{
+    width: 100%;
+    background: white;
+}
+.secciones div{ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 10px;
+    margin-left: 30px;
+}
+.secciones a{
+    width: 250px;
+    border: 3px solid red;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+}
+.secciones  a img{
+    width: 100%;
+}
+.secciones div a:hover{
+    border: 3px dotted red;
+}
+#bebi{
+    width: 60px;
+   height: 190px;
+}
+#mas{
+    width: 150px;
+   height: 180px;
+   margin-top: 8px;
+}
+#limp{
+    width: 120px;
+   height: 170px;
+   margin-top: 8px;
+}
+#b1{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    ul .tabs li{
+        width: none;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .tabs li a .tab_text{
+        display: none;
+    }
+    .secciones div{
+        justify-content: center;
+        display: flex;
+    }
+}
+@media only screen and (max-width: 600px){
+    .tabs li{
+        padding: 15px 0px;
+    }
+    .tabs li a .tab_text{
+        display: none;
+    }
+    .secciones div{
+        justify-content: center;
+        display: flex;
+        margin-left: -4px;
+        gap: 8px;
+    }
+    .tabs{
+        height: 70px;
+        padding: 0;
+    }
+}
